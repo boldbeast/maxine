@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="assets/pondiuni_logo.png" />
+
+    <link rel="stylesheet" href="materialize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="materialize.js"></script>
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper topbarC">
+          <a href="#" data-target="slide-out" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <a href="#!" class="brand-logo right">ICB&FT 2020</a>
+          <ul class="left hide-on-med-and-down">
+            <li class="active">
+              <a
+                href="#"
+                onclick="selectOnClick(this)"
+                class="waves-effect waves-light "
+                style="font-size: 0.9rem;"
+                id="home"
+              >
+                HOME</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="selectOnClick(this)"
+                class="waves-effect waves-light "
+                style="font-size: 0.9rem;"
+                id="callforpaper"
+                >CALL FOR PAPERS</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://easychair.org/conferences/?conf=icoac2019"
+                onclick="selectOnClick(this)"
+                class="waves-effect waves-light "
+                style="font-size: 0.9rem;"
+                id="papersubmition"
+                >PAPER SUBMISSION</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="selectOnClick(this)"
+                class="waves-effect waves-light "
+                style="font-size: 0.9rem;"
+                id="registration"
+                >REGISTRATION</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="selectOnClick(this)"
+                class="waves-effect waves-light "
+                style="font-size: 0.9rem;"
+                id="schedule"
+                >SCHEDULE</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="selectOnClick(this)"
+                class="waves-effect waves-light "
+                style="font-size: 0.9rem;"
+                id="keynotespeaker"
+                >KEYNOTE SPEAKER</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="selectOnClick(this)"
+                class="waves-effect waves-light "
+                style="font-size: 0.9rem;"
+                id="committee"
+                >COMMITTEE</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="selectOnClick(this)"
+                class="waves-effect waves-light "
+                style="font-size: 0.9rem;"
+                id="travel"
+                >TRAVEL & ACCOMODATION</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="selectOnClick(this)"
+                class="waves-effect waves-light "
+                style="font-size: 0.9rem;"
+                id="aboutus"
+                >ABOUT US</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <a id="p-home" class="sidenav-close" onclick="selectOnClick(this)"
+          >HOME</a
+        >
+      </li>
+      <li>
+        <a
+          id="p-callforpaper"
+          class="sidenav-close"
+          onclick="selectOnClick(this)"
+          >CALL FOR PAPERS</a
+        >
+      </li>
+      <li>
+        <a href="https://easychair.org/conferences/?conf=icoac2019"
+          >PAPER SUBMISSION</a
+        >
+      </li>
+      <li>
+        <a
+          id="p-registration"
+          class="sidenav-close"
+          onclick="selectOnClick(this)"
+          >REGISTRATION</a
+        >
+      </li>
+      <li>
+        <a id="p-schedule" class="sidenav-close" onclick="selectOnClick(this)"
+          >SCHEDULE</a
+        >
+      </li>
+      <li>
+        <a id="p-keynote" class="sidenav-close" onclick="selectOnClick(this)"
+          >KEYNOTE SPEAKER</a
+        >
+      </li>
+      <li>
+        <a id="p-committee" class="sidenav-close" onclick="selectOnClick(this)"
+          >COMMITTEE</a
+        >
+      </li>
+      <li>
+        <a id="p-travel" class="sidenav-close" onclick="selectOnClick(this)"
+          >TRAVEL & ACCOMODATION</a
+        >
+      </li>
+      <li>
+        <a id="p-aboutus" class="sidenav-close" onclick="selectOnClick(this)"
+          >ABOUT US</a
+        >
+      </li>
+    </ul>
+    <div id="content"></div>
+    <footer class="page-footer topbarC">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Contact Us for Further Details</h5>
+            <p class="grey-text text-lighten-4">
+              Email address : fintechconference.dbt@gmail.com
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Important Links</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Registration</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!"
+                  >Paper Submission</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Brouchre</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!"
+                  >Committee details</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-3">
+        <div class="container">
+          © 2020 Copyright ICB & FT Web Team
+          <a class="grey-text text-lighten-4 right" href="#!"></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        init();
+      });
+    </script>
+  </body>
+</html>
